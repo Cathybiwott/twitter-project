@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_background="white">
+
+    <ImageView
+        android:id="@+id/idAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        tools:text="Cathy"
+        app:layout_constraintStart_toEndOf="@+id/idAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        tools:text="Cathy loves driving"
+        app:layout_constraintStart_toEndOf="@+id/tvDisplayName"
+        app:layout_constraintTop_toTopOf="@+id/tvDisplayName" />
+
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        tools:text="Today is my birthday and I need to have a very big ceremony"
+        app:layout_constraintStart_toEndOf="@+id/idAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplayName" />
+
+    <TextView
+        android:id="@+id/tvCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="228dp"
+        tools:text="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweet" />
+
+    <TextView
+        android:id="@+id/tvRtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        tools:text="7"
+        app:layout_constraintStart_toEndOf="@+id/tvCommentCount"
+        app:layout_constraintTop_toTopOf="@+id/tvCommentCount" />
+
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        tools:text="109"
+        app:layout_constraintStart_toEndOf="@+id/tvRtCount"
+        app:layout_constraintTop_toTopOf="@+id/tvRtCount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
